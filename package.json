@@ -1,6 +1,6 @@
 {
   "name": "rest-write-to-fs",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "write to fs",
   "main": "index.js",
   "scripts": {

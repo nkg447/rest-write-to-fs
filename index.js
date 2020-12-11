@@ -61,8 +61,9 @@ function cli(args) {
   const write = (req, res, next) => {
     if (req.query && req.query.file) {
       const file = path.join(options.folder, req.query.file);
-      if (req.body && req.body.length > 0) {
-        const data = req.body;
+      if (req.body && req.headers["content-length"] > 0) {
+        const data =
+          typeof req.body === "object" ? JSON.stringify(req.body) : req.body;
         fs.writeFile(file, data, function (err) {
           if (err) {
             next(
