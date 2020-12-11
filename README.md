@@ -17,6 +17,6 @@ where options include:
 ## Endpoints
 * Append - POST `/append?file=fileName`
 Will append data sent in request body to fileName.
-* Write - POST `/writw?file=fileName`
+* Write - POST `/write?file=fileName`
 Will create/override data sent in request body to fileName 
 
