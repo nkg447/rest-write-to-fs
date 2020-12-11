@@ -1,8 +1,10 @@
-import arg from "arg";
-import restify from "restify";
-import errs from "restify-errors";
-import path from "path";
-import fs from "fs";
+#!/usr/bin/env node
+
+const arg = require("arg");
+const restify = require("restify");
+const errs = require("restify-errors");
+const path = require("path");
+const fs = require("fs");
 
 function parseArgumentsIntoOptions(rawArgs) {
   const args = arg(
@@ -22,7 +24,7 @@ function parseArgumentsIntoOptions(rawArgs) {
   };
 }
 
-export function cli(args) {
+function cli(args) {
   let options = parseArgumentsIntoOptions(args);
 
   const server = restify.createServer();
@@ -87,3 +89,5 @@ export function cli(args) {
     );
   });
 }
+
+cli(process.argv);

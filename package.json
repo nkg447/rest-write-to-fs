@@ -1,17 +1,18 @@
 {
   "name": "rest-write-to-fs",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "write to fs",
-  "main": "bin/rest-write-to-fs",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "pkg": "pkg index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nkg447/rest-write-to-fs.git"
   },
   "bin": {
-    "rest-write-to-fs": "bin/rest-write-to-fs.js"
+    "rest-write-to-fs": "index.js"
   },
   "keywords": [
     "rest",
@@ -27,8 +28,13 @@
   "homepage": "https://github.com/nkg447/rest-write-to-fs#readme",
   "dependencies": {
     "arg": "^5.0.0",
-    "esm": "^3.2.25",
     "inquirer": "^7.3.3",
     "restify": "^8.5.1"
+  },
+  "pkg": {
+    "assets": "node_modules/**/*"
+  },
+  "devDependencies": {
+    "pkg": "^4.4.9"
   }
 }
