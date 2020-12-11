@@ -1,0 +1,34 @@
+{
+  "name": "rest-write-to-fs",
+  "version": "1.0.5",
+  "description": "write to fs",
+  "main": "bin/rest-write-to-fs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nkg447/rest-write-to-fs.git"
+  },
+  "bin": {
+    "rest-write-to-fs": "bin/rest-write-to-fs.js"
+  },
+  "keywords": [
+    "rest",
+    "fs",
+    "postman",
+    "cli"
+  ],
+  "author": "Nikunj Gupta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nkg447/rest-write-to-fs/issues"
+  },
+  "homepage": "https://github.com/nkg447/rest-write-to-fs#readme",
+  "dependencies": {
+    "arg": "^5.0.0",
+    "esm": "^3.2.25",
+    "inquirer": "^7.3.3",
+    "restify": "^8.5.1"
+  }
+}
