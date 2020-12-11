@@ -7,7 +7,16 @@ npm install -g rest-write-to-fs
 ```
 
 ## How to use
+```
 Usage: rest-write-to-fs [-options]
 where options include:
     -p --port          PORT number (default is 8000)
     -f --folder        Path to the directory to store the files (default is the current working directory)
+```
+
+## Endpoints
+* Append - POST `/append?file=fileName`
+Will append data sent in request body to fileName.
+* Write - POST `/writw?file=fileName`
+Will create/override data sent in request body to fileName 
+
